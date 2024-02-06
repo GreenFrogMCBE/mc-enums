@@ -1,4 +1,8 @@
 {
+  "name": "@greenfrog/mc-enums",
+  "scripts": {
+    "build": "npx tsc && node merger"
+  },
   "devDependencies": {
     "typescript": "^5.3.3"
   }
