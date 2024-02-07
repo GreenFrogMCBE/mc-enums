@@ -1,6 +1,6 @@
 {
   "name": "@greenfrog/mc-enums",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "build": "npx tsc && node merger"
   },
