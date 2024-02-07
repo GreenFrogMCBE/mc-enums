@@ -1,4 +1,4 @@
-enum ChatColor {
+enum Color {
     Black = "§0",
     DarkBlue = "§1",
     DarkGreen = "§2",
@@ -16,4 +16,6 @@ enum ChatColor {
     White = "§f"
 }
 
-export { ChatColor }
+const ChatColor = Color
+
+export { Color, ChatColor }
