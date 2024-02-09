@@ -1,6 +1,6 @@
 // Auto-generated
 
-import { Block } from "./Block"
+/* [import-ignore] */ import { Block } from "./Block"
 
 class Air extends Block {
 	public id: number = 0

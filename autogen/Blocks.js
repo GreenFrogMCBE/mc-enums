@@ -9,7 +9,7 @@ function to_upper_camel_case(str) {
 		.replace(/^\w/, (letter) => letter.toUpperCase());
 }
 
-let result = ''
+let result = '/* [import-ignore] */ import { Block } from "./Block"'
 
 for (const block of blocks) {
 	const name = Object.keys(block)[0]

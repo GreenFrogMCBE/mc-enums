@@ -23,6 +23,9 @@ function combine_files(file_paths, output_file) {
   const combined_content = file_paths
     .map(file_path => fs.readFileSync(file_path, 'utf-8'))
     .join('\n')
+    .replaceAll("/* [import-ignore] */", "// [ignored] ")
+    .replaceAll("_2", "_1") // Fix for blocks, we need a better way of doing this
+    .replaceAll("Block_1.", "")
 
   fs.writeFileSync(output_file, combined_content, 'utf-8')
 }
