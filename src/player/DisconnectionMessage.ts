@@ -17,7 +17,7 @@ class DisconnectionMessage {
             case Message.NoReason:
                 return "You were disconnected"
             default:
-                throw new Error("Unsupported message: " + this.message)
+                return this.message
         }
     }
 }
